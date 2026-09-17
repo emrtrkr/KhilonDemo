@@ -1,0 +1,29 @@
+.text-highlight {
+  color: var(--color-primary);
+}
+
+.hero-background-effect {
+  background:
+    radial-gradient(ellipse at 72% 28%, rgba(197, 214, 61, 0.22), transparent 46%),
+    radial-gradient(ellipse at 18% 86%, rgba(45, 85, 112, 0.55), transparent 48%),
+    linear-gradient(160deg, #0c1c28 0%, #112535 45%, #1a3a52 100%);
+}
+
+.hero-image {
+  min-height: 420px;
+  background: url("../hero-image.png") center / contain no-repeat;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 968px) {
+  .hero-image {
+    display: none;
+  }
+}

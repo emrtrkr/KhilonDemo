@@ -1,0 +1,10 @@
+{
+  "buildCommand": "node scripts/write-widget-config.js",
+  "outputDirectory": ".",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    }
+  ]
+}
